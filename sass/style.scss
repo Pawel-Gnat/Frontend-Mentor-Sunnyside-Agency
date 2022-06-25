@@ -1,0 +1,46 @@
+// variables primary
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
+$dark-blue-photography-text: hsl(198, 62%, 26%);
+$dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+// variables neutral
+$very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$very-dark-grayish-blue: hsl(213, 9%, 39%);
+$dark-grayish-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+// site
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Barlow', sans-serif;
+	font-family: 'Fraunces', serif;
+	font-size: 62.5%;
+	min-height: 100vh;
+	min-width: 375px;
+	background-color: gray;
+}
+
+nav {
+	height: 85px;
+	background-image: url('../images/mobile/image-header.jpg');
+}
+
+.hero-image {
+	height: 450px;
+
+	background-image: url('../images/mobile/image-header.jpg');
+	background-size: cover;
+	background-position: 0px -100px;
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+}
