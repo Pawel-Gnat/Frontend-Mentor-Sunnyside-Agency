@@ -1,9 +1,10 @@
-.nav-mobile__btn--bar-1, .nav-mobile__btn--bar-2, .nav-mobile__btn--bar-3 {
-  position: absolute;
+.nav-mobile__btn--bar, .nav-mobile__btn--bar::before, .nav-mobile__btn--bar::after {
   display: block;
   width: 25px;
-  height: 1px;
+  height: 2px;
   background-color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 * {
@@ -42,23 +43,57 @@ nav {
 
 .nav-mobile__btn {
   position: relative;
-  width: 25px;
-  height: 15px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
   border: none;
   background: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.nav-mobile__btn--bar-1 {
-  top: 0;
+.nav-mobile__btn:focus {
+  outline: none;
 }
 
-.nav-mobile__btn--bar-3 {
-  bottom: 0;
+.nav-mobile__btn--bar::before, .nav-mobile__btn--bar::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-mobile__btn--bar::before {
+  top: 10px;
+}
+
+.nav-mobile__btn--bar::after {
+  bottom: 10px;
 }
 
 .nav-mobile--links {
   display: none;
+}
+
+.menu .nav-mobile__btn--bar::before {
+  -webkit-transform: rotate(45deg) translate(6px, 6px);
+          transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu .nav-mobile__btn--bar::after {
+  -webkit-transform: rotate(-45deg) translate(6px, -6px);
+          transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .hero-image {

@@ -13,11 +13,11 @@ $white: hsl(0, 0%, 100%);
 
 // extend
 %bars {
-	position: absolute;
 	display: block;
 	width: 25px;
-	height: 1px;
+	height: 2px;
 	background-color: white;
+	transition: all 0.3s ease-in-out;
 }
 
 // site
@@ -53,27 +53,64 @@ nav {
 .nav-mobile {
 	&__btn {
 		position: relative;
-		width: 25px;
-		height: 15px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
 		border: none;
+		// border: 2px solid white;
 		background: none;
+
+		transition: all 0.3s ease-in-out;
 		cursor: pointer;
 
-		&--bar-1 {
-			@extend %bars;
-			top: 0;
+		&:focus {
+			outline: none;
 		}
-		&--bar-2 {
+
+		&--bar,
+		&--bar::before,
+		&--bar::after {
 			@extend %bars;
 		}
-		&--bar-3 {
-			@extend %bars;
-			bottom: 0;
+
+		&--bar::before,
+		&--bar::after {
+			content: '';
+			position: absolute;
+		}
+
+		&--bar::before {
+			top: 10px;
+		}
+
+		&--bar::after {
+			bottom: 10px;
 		}
 	}
 
 	&--links {
 		display: none;
+	}
+}
+
+.menu .nav-mobile {
+	&__btn {
+		&--bar {
+			// transform: translate3d(0, 0, 0) scale(0, 1);
+		}
+
+		&--bar::before {
+			transform: rotate(45deg) translate(6px, 6px);
+		}
+
+		&--bar::after {
+			transform: rotate(-45deg) translate(6px, -6px);
+		}
 	}
 }
 
