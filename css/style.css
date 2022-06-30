@@ -591,7 +591,7 @@ nav {
     padding: 3em 8em;
   }
   .container__text-area1--heading, .container__text-area2--heading {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 1em 0 1em;
     text-align: left;
   }
@@ -636,12 +636,8 @@ nav {
     padding: 0 2em;
     background-image: url("../images/desktop/image-graphic-design.jpg");
   }
-  .container2__text-area1--heading1, .container2__text-area1--heading2, .container2__text-area2--heading1, .container2__text-area2--heading2 {
-    top: 320px;
-  }
   .container2__text-area1--text1, .container2__text-area1--text2, .container2__text-area2--text1, .container2__text-area2--text2 {
-    top: 325px;
-    padding: 0 6.5em;
+    padding: 0 3.5em;
   }
   .container2__text-area2 {
     background-image: url("../images/desktop/image-photography.jpg");
@@ -712,11 +708,8 @@ nav {
   .container__text-area2 {
     padding: 3em 11em 3em 11.5em;
   }
-  .container2__text-area1--heading1, .container2__text-area1--heading2, .container2__text-area2--heading1, .container2__text-area2--heading2 {
-    top: 390px;
-  }
   .container2__text-area1--text1, .container2__text-area1--text2, .container2__text-area2--text1, .container2__text-area2--text2 {
-    top: 425px;
+    padding: 0 6.5em;
   }
 }
 

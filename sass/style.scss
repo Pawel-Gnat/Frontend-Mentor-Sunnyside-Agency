@@ -546,7 +546,7 @@ nav {
 			padding: 3em 8em;
 
 			&--heading {
-				font-size: 2.5rem;
+				font-size: 2.2rem;
 				margin: 1em 0 1em;
 				text-align: left;
 			}
@@ -588,22 +588,15 @@ nav {
 
 		&__text-area1,
 		&__text-area2 {
-
-
 			position: relative;
 			width: 100%;
 			height: 595px;
 			padding: 0 2em;
 			background-image: url('../images/desktop/image-graphic-design.jpg');
 
-			&--heading1,
-			&--heading2 {
-				top: 320px;
-			}
-
 			&--text1,
-			&--text2 {top: 325px;
-				padding: 0 6.5em;
+			&--text2 {
+				padding: 0 3.5em;
 			}
 		}
 
@@ -673,15 +666,9 @@ nav {
 	.container2 {
 		&__text-area1,
 		&__text-area2 {
-
-			&--heading1,
-			&--heading2 {		
-				top: 390px;
-			}
-
 			&--text1,
 			&--text2 {
-				top: 425px;
+				padding: 0 6.5em;
 			}
 		}
 	}
